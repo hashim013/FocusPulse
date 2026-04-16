@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'core/theme/app_theme.dart';
 import 'data/models/tracker_session.dart';
-
 import 'presentation/home/splash_screen.dart';
 import 'core/utils/notification_service.dart';
 
