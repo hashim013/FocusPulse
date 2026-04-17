@@ -32,8 +32,6 @@ Built with **Modern Clean Architecture**, premium UI/UX, and high stability.
 - **PDF Reports**: Generate professional, formatted PDF summaries of your progress.
 - **Printing**: Direct support for printing reports from the app.
 
----
-
 ### 🎨 Premium UI & Theme
 - **Dark & Light Mode**: Seamless theme switching with system-wide adaptation.
 - **Dynamic Theme Persistence**: Remembers your preference even after restart.
