@@ -1,86 +1,176 @@
-# Focus Pulse: Mood & Study Tracker 🚀
-
 <p align="center">
-  <img src="assets/banner.png" width="800" height="400" alt="Focus Pulse Banner">
+  <img src="assets/banner.png" width="100%" height="400" alt="FocusPulse Banner">
 </p>
-**Focus Pulse** is a high-performance, premium Flutter application designed to revolutionize how students manage their academic life. Built with **Material 3** aesthetics and a focus on modularity, it combines a Pomodoro timer, task management, and deep behavioral analytics into a single "Student OS."
+
+# 📱 FocusPulse – Student OS & Productivity Tracker
+
+A sleek, modern, and high-performance Productivity Dashboard for students. **FocusPulse** helps users manage their study sessions, track their mood, visualize progress with advanced charts, and maintain a consistent focus flow—all with persistent local storage.
+
+Built with **Modern Clean Architecture**, premium UI/UX, and high stability.
 
 ---
 
-## ✨ Key Features
+## 🚀 Features
 
--   **🎯 Focus Timer**: High-precision Pomodoro clock with customizable sessions to maximize deep work.
--   **📈 Advanced Analytics**: Visualize your productivity "Pulse" with Line, Bar, and Pie charts powered by `fl_chart`.
--   **📝 Session Logging**: Keep track of every study minute, your mood, and specific subjects.
--   **🔔 Smart Notifications**: Intelligent daily reminders synchronized with your local timezone to keep you on schedule.
--   **📄 Data Export**: Generate professional PDF reports of your study logs for physical tracking.
--   **🌓 Modern Theming**: Sleek Dark/Light mode support using a curated Teal & Slate color palette.
+### ⏱️ Focus & Timer
+- **Live Focus Session**: Pomodoro-inspired timer for deep work.
+- **Dynamic Logging**: Sessions are automatically recorded with mood and duration.
+- **Session Control**: Start, pause, and stop tracking with ease.
 
----
+### 📊 Advanced Analytics
+- **Visual Trends**: Weekly Productivity charts using `fl_chart`.
+- **Mood Correlation**: Discover how your mood affects your study efficiency.
+- **Smart Insights**: AI-style calculations to find your "Most Productive Mood".
 
-## 🛠️ Tech Stack & Packages
+### 📝 Record Management (CRUD)
+- **Log System**: View a complete history of all study sessions.
+- **Full Control**: Add missed sessions, edit existing ones, or delete records.
+- **Persistence**: Every record is saved instantly to local storage.
 
-Focus Pulse uses a modern, high-speed stack for the best user experience:
-
--   **Database**: `Hive` & `Hive Flutter` (Ultra-fast NoSQL local storage).
--   **Charts**: `fl_chart` (Reactive data visualization).
--   **PDF/Printing**: `pdf` & `printing` (Native document generation).
--   **Notifications**: `flutter_local_notifications` & `timezone` (Platform-specific reminders).
--   **UI**: Material 3, `google_fonts`, and custom glassmorphic components.
-
----
-
-## 🏗️ Architecture
-
-The project follows a **Clean Modular Architecture**:
-
--   `core/`: Application-wide themes, constants, and global services (Notifications, Insights).
--   `data/`: Domain models and Hive TypeAdapters.
--   `presentation/`: Feature-based UI modules (Analytics, Focus, Tasks, Logs, Settings).
+### 📄 Data Exports
+- **CSV Export**: Take your raw data to Excel or Google Sheets.
+- **PDF Reports**: Generate professional, formatted PDF summaries of your progress.
+- **Printing**: Direct support for printing reports from the app.
 
 ---
 
-## 🧠 Solved Technical Challenges
+## 🎥 Project Presentation
 
-### 1. The Initialization "White Screen"
-We solved the common Flutter initialization race condition by re-ordering the `main()` async sequence, ensuring Hive boxes and notification services are warm before the first frame is rendered.
+[![Watch the Demo](https://img.shields.io/badge/YouTube-Video%20Demo-red?style=for-the-badge&logo=youtube)](YOUR_VIDEO_LINK_HERE)
 
-### 2. Timezone Synchronization
-Fixed a critical bug where `flutter_timezone` returned inconsistent types on different platforms. Implemented a defensive mapping layer that guarantees notification accuracy regardless of the device's OS version.
-
-### 3. Gap-Filling Chart Logic
-To prevent broken lines in the 30-day productivity chart, we built a data-mapping engine that automatically fills zero-hour study days, providing a smooth and continuous visual experience.
-
----
-
-## ⚙️ How to Run
-
-1.  **Clone the Repo**:
-    ```bash
-    git clone https://github.com/[YOUR_USERNAME]/focus_pulse.git
-    ```
-2.  **Install Dependencies**:
-    ```bash
-    flutter pub get
-    ```
-3.  **Generate Hive Adapters**:
-    ```bash
-    flutter pub run build_runner build --delete-conflicting-outputs
-    ```
-4.  **Run the App**:
-    ```bash
-    flutter run
-    ```
+In the presentation video, I cover:
+- **Application Launch**: Fresh start and splash screen.
+- **Project Structure**: Deep dive into the `lib/` directory and clean architecture.
+- **Feature Walkthrough**: Real-time study session tracking and focus timer.
+- **Data Management**: Demonstrating Adding, Editing, and Deleting records in the Logs tab.
+- **Visual Analytics**: Interactive charts and productivity insights.
+- **Data Persistence**: Closing and restarting the app to prove data integrity via Hive.
 
 ---
 
-## 🤝 Project Evaluation
-This project was built to showcase:
-- Clean and maintainable codebase.
-- Advanced reactive state management using `ValueListenableBuilder`.
-- Sophisticated local data persistence.
-- Premium UI/UX implementation.
+### 🎨 Premium UI & Theme
+- **Dark & Light Mode**: Seamless theme switching with system-wide adaptation.
+- **Dynamic Theme Persistence**: Remembers your preference even after restart.
+- **Google Fonts**: Stylish typography for a premium look and feel.
+
+### 💾 Storage & Reliability
+- **Hive NoSQL**: Ultra-fast local storage. No internet required.
+- **Instant Persistence**: Data survives app restarts and crashes.
+- **Offline First**: Works 100% offline with no data loss.
 
 ---
 
-*Designed and Developed by [Your Name]*
+## 📸 App Flow
+
+**Splash Screen** (Branding) → **Home Dashboard** (Status) → **Focus Tab** (Timer) → **Analytics** (Charts) → **Logs** (CRUD) → **Settings** (Themes & Exports)
+
+---
+
+## 🏗️ Project Structure
+
+```text
+lib/
+├── core/
+│   ├── theme/           # App-wide styling and color systems
+│   └── utils/           # Logic for Exports, Notifications, and Analytics
+│
+├── data/
+│   └── models/          # Hive Data Models (TrackerSession)
+│
+├── presentation/
+│   ├── analytics/       # Charting & Progress Visualization
+│   ├── focus/           # Pomodoro/Focus Session UI
+│   ├── home/            # Main navigation & Splash Screen
+│   ├── logs/            # History CRUD Interface
+│   ├── settings/        # Preferences & Data Tools
+│   └── widgets/         # Reusable UI Components
+│
+└── main.dart            # Multi-service initialization (Hive, Notifications)
+```
+
+### 📌 Detailed Logic Explanation
+- **Data Storage**: Uses **Hive** boxes for millisecond-fast read/write operations. TypeAdapters ensure Dart objects are stored efficiently.
+- **Analytics Engine**: The `InsightsCalculator` processes raw Hive data to calculate averages and productivity peaks.
+- **Notification Service**: Schedules daily study reminders using `flutter_local_notifications` with timezone awareness.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Flutter & Dart** - Core Framework.
+- **Hive** - NoSQL database for local persistence.
+- **fl_chart** - Advanced data visualization.
+- **pdf & printing** - Professional report generation.
+- **flutter_local_notifications** - Smart scheduling.
+- **google_fonts** - Enhanced aesthetics.
+
+---
+
+## ⚙️ Installation
+
+1️⃣ **Clone repository**
+```bash
+git clone https://github.com/your-username/focus-pulse.git
+cd focus_pulse
+```
+
+2️⃣ **Install dependencies**
+```bash
+flutter pub get
+```
+
+3️⃣ **Run the project**
+```bash
+flutter run
+```
+
+---
+
+## 🧠 Key Concepts Implemented
+
+- **Clean Layered Architecture** (Core, Data, Presentation).
+- **Service Pattern** for Notifications and File Exports.
+- **NoSQL Schema Management** with Hive Adapters.
+- **Data Visualization** logic for productivity trends.
+- **Custom Theme System** with ValueListenable observers.
+
+---
+
+## 💡 Challenges Faced
+
+| Problem | Solution |
+| :--- | :--- |
+| **Data Synchronization** | Implemented `ValueListenableBuilder` to reactively update UI when Hive data changes. |
+| **Complex Charting** | Created custom mapping logic to translate raw study hours into formatted `LineChart` data. |
+| **Notification Scheduling** | Handled timezone initialization for accurate daily study reminders across regions. |
+| **State Persistence** | Managed timer states and theme preferences using dedicated Hive boxes. |
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] Firebase Cloud Sync for multi-device support.
+- [ ] Gamification (Badges and Leveling system).
+- [ ] Integration with Google Calendar.
+- [ ] AI-Powered Study Schedule Generator.
+
+---
+
+## 🤝 Contributing
+
+This project is a high-quality Student OS portfolio. Contributions are welcome!
+1. Fork the repo. 2. Create your Feature Branch. 3. Commit your changes. 4. Push to the Branch. 5. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 🙋 Author
+**Muhammad Hashim**  
+*Flutter Developer | Student | Product Designer*
+
+📧 [Connect with me on LinkedIn](https://www.linkedin.com/in/your-profile) | ⭐ Star the repo if you like it!
