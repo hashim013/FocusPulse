@@ -1,7 +1,5 @@
 import 'package:hive/hive.dart';
 
-// This line tells Flutter that the generated code will be in this file.
-// It will show a red error until you run the build command.
 part 'tracker_session.g.dart';
 
 /// Data Model representing a single study session.
