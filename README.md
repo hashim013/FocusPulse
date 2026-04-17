@@ -48,6 +48,18 @@ Built with **Modern Clean Architecture**, premium UI/UX, and high stability.
 
 **Splash Screen** (Branding) → **Home Dashboard** (Status) → **Focus Tab** (Timer) → **Analytics** (Charts) → **Logs** (CRUD) → **Settings** (Themes & Exports)
 
+<p align="center">
+  <img src="assets/readme-screenshots/Screenshot_1776444016.png" width="30%" alt="App Flow 1">  
+  <img src="assets/readme-screenshots/Screenshot_1776444020.png" width="30%" alt="App Flow 2">  
+  <img src="assets/readme-screenshots/Screenshot_1776444024.png" width="30%" alt="App Flow 3">
+</p>
+
+<p align="center">
+  <img src="assets/readme-screenshots/Screenshot_1776444029.png" width="30%" alt="App Flow 4">  
+  <img src="assets/readme-screenshots/Screenshot_1776444048.png" width="30%" alt="App Flow 5">  
+  <img src="assets/readme-screenshots/Screenshot_1776444011.png" width="30%" alt="App Flow 6">
+</p>
+
 ---
 
 ## 🏗️ Project Structure
