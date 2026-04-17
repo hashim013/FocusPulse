@@ -34,20 +34,6 @@ Built with **Modern Clean Architecture**, premium UI/UX, and high stability.
 
 ---
 
-## 🎥 Project Presentation
-
-[![Watch the Demo](https://img.shields.io/badge/YouTube-Video%20Demo-red?style=for-the-badge&logo=youtube)](YOUR_VIDEO_LINK_HERE)
-
-In the presentation video, I cover:
-- **Application Launch**: Fresh start and splash screen.
-- **Project Structure**: Deep dive into the `lib/` directory and clean architecture.
-- **Feature Walkthrough**: Real-time study session tracking and focus timer.
-- **Data Management**: Demonstrating Adding, Editing, and Deleting records in the Logs tab.
-- **Visual Analytics**: Interactive charts and productivity insights.
-- **Data Persistence**: Closing and restarting the app to prove data integrity via Hive.
-
----
-
 ### 🎨 Premium UI & Theme
 - **Dark & Light Mode**: Seamless theme switching with system-wide adaptation.
 - **Dynamic Theme Persistence**: Remembers your preference even after restart.
