@@ -24,13 +24,8 @@ class NotificationService {
 
     const AndroidInitializationSettings initializationSettingsAndroid =
         AndroidInitializationSettings('@mipmap/ic_launcher');
-    final DarwinInitializationSettings initializationSettingsDarwin =
-        DarwinInitializationSettings();
     final InitializationSettings initializationSettings =
-        InitializationSettings(
-          android: initializationSettingsAndroid,
-          iOS: initializationSettingsDarwin,
-        );
+        InitializationSettings(android: initializationSettingsAndroid);
 
     await _notificationsPlugin.initialize(settings: initializationSettings);
 
