@@ -148,6 +148,6 @@ This project is open-source and available under the **MIT License**.
 
 ## 🙋 Author
 **Muhammad Hashim**  
-*Flutter Developer | Student | Product Designer*
+*Flutter Developer | Student*
 
 📧 [Connect with me on LinkedIn](https://www.linkedin.com/in/muhammad-hashim-611781263/) | ⭐ Star the repo if you like it!
