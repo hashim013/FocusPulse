@@ -140,13 +140,6 @@ flutter run
 
 ---
 
-## 🤝 Contributing
-
-This project is a high-quality Student OS portfolio. Contributions are welcome!
-1. Fork the repo. 2. Create your Feature Branch. 3. Commit your changes. 4. Push to the Branch. 5. Open a Pull Request.
-
----
-
 ## 📄 License
 
 This project is open-source and available under the **MIT License**.
