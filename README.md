@@ -1,7 +1,7 @@
 # Focus Pulse: Mood & Study Tracker 🚀
 
 <p align="center">
-  <img src="assets/banner.png" width="600" height="300" alt="Focus Pulse Banner">
+  <img src="assets/banner.png" width="800" height="400" alt="Focus Pulse Banner">
 </p>
 **Focus Pulse** is a high-performance, premium Flutter application designed to revolutionize how students manage their academic life. Built with **Material 3** aesthetics and a focus on modularity, it combines a Pomodoro timer, task management, and deep behavioral analytics into a single "Student OS."
 
