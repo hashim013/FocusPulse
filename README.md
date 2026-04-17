@@ -157,4 +157,4 @@ This project is open-source and available under the **MIT License**.
 **Muhammad Hashim**  
 *Flutter Developer | Student | Product Designer*
 
-📧 [Connect with me on LinkedIn](https://www.linkedin.com/in/your-profile) | ⭐ Star the repo if you like it!
+📧 [Connect with me on LinkedIn](https://www.linkedin.com/in/muhammad-hashim-611781263/) | ⭐ Star the repo if you like it!
